@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Tech Hand</title>
+
+<style>
+body{
+    margin:0;
+    font-family:sans-serif;
+}
+
+.main{
+    display:flex;
+    height:100vh;
+}
+
+/* LEFT */
+.left{
+    width:50%;
+    background:linear-gradient(#ff512f,#dd2476);
+    color:white;
+    text-align:center;
+    padding-top:120px;
+}
+
+.left h1{
+    font-size:40px;
+}
+
+.left p{
+    width:300px;
+    margin:auto;
+}
+
+.quote{
+    font-style:italic;
+    margin:20px;
+}
+
+/* RIGHT */
+.right{
+    width:50%;
+    background:#eee;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.card{
+    background:white;
+    padding:20px;
+    margin:10px;
+    width:260px;
+    border-radius:10px;
+    cursor:pointer;
+}
+
+.card:hover{
+    background:#ffecec;
+    margin-left:20px;
+}
+
+.icon{
+    font-size:25px;
+}
+</style>
+
+</head>
+
+<body>
+
+<div class="main">
+
+    <div class="left">
+        <h1>Tech Hand</h1>
+        <p>Fast, trusted repair services at your doorstep</p>
+
+        <div class="quote">
+            "Quality service is not an act, it is a habit."
+        </div>
+
+        <!-- Visit Website button removed -->
+
+    </div>
+
+    <div class="right">
+
+        <div>
+
+            <div class="card" onclick="goLogin()">
+                <div class="icon">📱💻</div>
+                <h3>Phone & Laptop Repair</h3>
+                <p>Screen, battery, motherboard & software fixes</p>
+            </div>
+
+            <div class="card" onclick="goLogin()">
+                <div class="icon">🧊</div>
+                <h3>Fridge Repair</h3>
+                <p>Cooling & compressor issues</p>
+            </div>
+
+            <div class="card" onclick="goLogin()">
+                <div class="icon">❄️</div>
+                <h3>AC Repair</h3>
+                <p>Installation & servicing</p>
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+<script>
+function goLogin(){
+    window.location="login.html";
+}
+</script>
+
+</body>
+</html>
